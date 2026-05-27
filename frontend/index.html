@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Text Narrator</title>
+
+    <link rel="stylesheet"
+          href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Text Narrator</h1>
+
+    <textarea
+        id="textInput"
+        placeholder="Enter text..."
+        rows="8">
+    </textarea>
+
+    <!-- Voice selection -->
+    <label for="voiceSelect">Voice</label>
+    <select id="voiceSelect" title="Select a voice">
+        <option value="">
+            Select Voice
+        </option>
+    </select>
+
+    <button onclick="generateNarration()">
+        Generate Narration
+    </button>
+
+    <div id="result"></div>
+
+    <button onclick="copyText()">
+        Copy Output
+    </button>
+
+    <div id="loader" hidden>
+        Loading AI...
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

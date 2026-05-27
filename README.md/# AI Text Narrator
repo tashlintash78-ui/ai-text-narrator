@@ -1,0 +1,53 @@
+# AI Text Narrator
+
+An AI-powered text narration web application that converts user input into AI-generated narration and reads it aloud using browser speech synthesis.
+
+## Features
+
+- AI text narration
+- Voice output
+- Voice selection
+- Copy output feature
+- Loading indicator
+- Error handling
+- Express backend API
+- Google Gemini integration
+
+## Technologies Used
+
+Frontend:
+- HTML
+- CSS
+- JavaScript
+
+Backend:
+- Node.js
+- Express.js
+
+AI:
+- Google Gemini API
+
+## Project Structure
+
+text-narrator/
+
+├── frontend/
+│ ├── index.html
+│ ├── styles.css
+│ └── app.js
+│
+├── backend/
+│ ├── server.js
+│ ├── routes/
+│ └── controllers/
+│
+├── README.md
+├── package.json
+└── Dockerfile
+
+## Installation
+
+Clone repository:
+
+```bash
+git clone your-repository-url
