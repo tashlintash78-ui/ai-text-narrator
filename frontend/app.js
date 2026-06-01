@@ -55,7 +55,7 @@ try{
 
 const response=
 await fetch(
-"http://localhost:5000/narrate",
+fetch("https://ai-text-narrator-1.onrender.com") 
 {
 method:"POST",
 
