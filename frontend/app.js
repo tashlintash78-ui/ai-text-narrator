@@ -55,7 +55,7 @@ try{
 
 const response=
 await fetch(
-fetch("https://ai-text-narrator-1.onrender.com") 
+"https://ai-text-narrator-1.onrender.com",
 {
 method:"POST",
 
