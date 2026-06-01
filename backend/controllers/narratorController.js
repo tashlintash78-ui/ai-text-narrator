@@ -22,26 +22,13 @@ const getNarration = async (req, res) => {
       narration
     });
 
-  } catch (error) {
-    console.log("ERROR:", error.message);
+ } catch (error) {
+  console.log("FULL ERROR:", error);
+  console.log("MESSAGE:", error.message);
+  console.log("STACK:", error.stack);
 
-    // Better debugging
-    if (error.message?.includes("429")) {
-      return res.status(429).json({
-        error: "Rate limit hit (too many requests). Wait and retry."
-      });
-    }
-
-    if (error.message?.includes("API_KEY")) {
-      return res.status(500).json({
-        error: "Invalid or missing API key"
-      });
-    }
-
-    return res.status(500).json({
-      error: "AI service failed. Check logs."
-    });
-  }
-};
-
-module.exports = { getNarration };
+  return res.status(500).json({
+    error: error.message
+  });
+}
+}
